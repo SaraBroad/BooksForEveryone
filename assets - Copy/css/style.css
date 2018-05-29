@@ -1,0 +1,48 @@
+header{
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 58px;
+}
+.header img {
+
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: #555;
+  }
+  
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+
+.header{
+      margin-bottom: 20px;
+  }
+
+form{
+    border: 16px solid light grey;
+  }
+
+.header2 {
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 58px;
+    display: inline;
+}
+.header2 img {
+
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+
+  }
+
+  .fb-button{
+    position: relative;
+    display: inline;
+    align-content: right;
+    padding-top: -10px;
+  }

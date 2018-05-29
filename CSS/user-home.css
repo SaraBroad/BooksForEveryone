@@ -1,0 +1,113 @@
+
+#map {
+    height: auto;
+    width: 99.5%;
+    height: 90%;
+    border: 1px black solid;
+    /* border-top: none;  */
+}
+
+#map-holder {
+    /* width: 400px;
+    height: 400px; */
+    /* border: 2px red solid; */
+}
+
+#btn-login {
+    background-color: #EEE;
+    color: #346fb1;
+    padding: 0px 15px 0 15px;
+    font-weight: normal;
+}
+
+#btn-store,
+#btn-library {
+    display: inline-block;
+    padding: auto 0;
+    margin: auto 2px auto 0px;
+    width: 49% !important;
+    /* height: 100%; */
+    border: none;
+    font-size: 1em;
+    box-shadow: none;
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0%;
+}
+
+#btn-store {
+    float: right
+}
+
+.btn-active {
+    border: 1px black solid !important;
+    border-bottom: none !important;
+    font-weight: bold !important;
+}
+
+.btn-inactive {
+    border: none;
+    /* border-bottom: 1px solid black; */
+    font-weight: normal;
+    color: #333333;
+}
+
+.map-size-xs {
+    width: 100px;
+    height: 100px;
+}
+.map-size-s {
+    width: 200px;
+    height: 200px;
+}
+.map-size-m {
+    width: 400px;
+    height: 400px;
+}
+.map-size-l {
+    width: 600px;
+    height: 600px;
+}
+.map-size-xl {
+    width: 800px;
+    height: 800px;
+}
+
+.btn-size {
+    font-family: sans-serif;
+    /* display: inline; */
+    width: 24%;
+    background-color: #777777;
+    font-size: 0.5em;;
+    border: none;
+    margin: auto;
+    color: #CCCCCC;
+    outline: none;
+    box-shadow: none;
+    border-bottom-left-radius: none !important;
+    border-bottom-right-radius: none !important;
+    /* outline: none; */
+}
+
+.btn-size-active {
+    color: peru;
+    background-color: #666666;
+    outline: none;
+}
+
+#btn-size-holder {
+    text-align: center;
+}
+
+#btn-size-label {
+    font-family: sans-serif;
+    display: inline;
+    width: 19%;
+    background-color: #777777;
+    /* font-size: 0.8em; */
+    margin: 0;
+}
+
+/* #bookstore-tab {
+     float:right;
+   } */

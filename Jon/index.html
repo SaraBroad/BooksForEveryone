@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html class="no-js ie ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Books for Everyone!!</title>
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <!-- jQuery-->
+  <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+  <!--FireBase-->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="CSS/reset.css">
+
+
+  <!-- <script type="text/javascript" src="CSS/reset.css"></script> -->
+  <!-- framework css -->
+  <!--[if gt IE 9]><!-->
+  <link type="text/css" rel="stylesheet" href="CSS/groundwork.css">
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" href="../CSS/groundwork-core.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-type.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ui.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-anim.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css"><![endif]-->
+  
+  <!-- add links to any style sheets you have created for your page -->
+  <!--
+  <link type="text/css" rel="stylesheet" href="CSS/YOURFILE.css">
+  -->
+
+
+  <style type="text/css">
+    .logo {
+      position: relative;
+      top: -0.5em;
+    }
+
+    .logo a,
+    .logo a:visited {
+      text-decoration: none;
+      color: #2B2B2D;
+    }
+
+    .logo img {
+      height: 2em;
+      position: relative;
+      top: 0.55em;
+      margin-right: 0.3em;
+    }
+  </style>
+    
+
+  <!-- snippet (syntax highlighting for code examples)-->
+  <script type="text/javascript" src="js/demo/jquery.snippet.min.js"></script>
+  
+  <script type="text/javascript">
+    (function () {
+      $(document).ready(function () {
+        $('pre[data-lang="html"]').snippet("html", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        $('pre[data-lang="css"]').snippet("css", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        $('pre[data-lang="sass"]').snippet("sass", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        return $('pre[data-lang="js"]').snippet("javascript", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+      });
+    }).call(this);
+  </script>
+<!--
+  link to your js files here!  E.g., main page should link to this (which is very buggy at this time!)
+  <script type="text/javascript" src="js/googleBooks.js"></script>
+-->
+</head>
+
+<body>
+
+  <header class="padded">
+    <div class="container">
+      <div class="row">
+        <div class="one half">
+          <h2 class="logo">
+            <a href="index.html" target="_parent"><img src="assets/images/div.jpg"   alt="Books for Everyone!!">Books for Everyone!!</a></h2>
+        </div>
+        <!-- <div class="one half">
+        </div> -->
+      </div>
+      <nav role="navigation" class="nav">
+        <ul role="menubar">
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i> Home</a>
+          </li>
+          <li>
+              <a href="bookpage.html">Books We Like</a>
+            </li>
+            <li>
+              <a href="wishlist.html">You!</a>
+            </li>
+            <li>
+              <a href="community.html">Community</a>
+            </li>
+            <li style="float:right">
+                <a href="login.html"><i class="icon-user icon-1x"></i> Join Us or Sign In!</a>
+            </li>
+      </nav>
+    </div>
+  </header>
+    </header>
+    <div class="container">
+      <div class="padded">
+        <div class="row">
+          <div class="three fifths bounceInRight animated">
+            <h1 class="zero museo-slab">Mission Statement</h1>
+            <p class="quicksand">Our mission is to provide resources for parents and children to find books with characters  with diversity in nationality and ethnic background. We hope to provide children and adults with the possibility to access books they may not have known about or be able to afford. Learning about a variety of diverse upbringings helps with acceptance and respect among people regardless of their differences. This will hopefully make the world a better place one book at a time.</p>
+          </div>
+          <div class="two fifths align-right-ipad align-right-desktop flipInX animated">
+            
+          
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="align-right padded"><a href="#" class="gap-right">My Account <i class="icon-user"></i></a><a href="#" class="gap-right">View Wishlist <i class="icon-shopping-cart"></i></a><a href="#">Sign Out <i class="icon-signout"></i></a></div>
+      <div class="row">
+        <aside class="one fifth padded bounceInLeft animated">
+          <nav title="Shop by Category" role="menu" class="small-tablet nav vertical menu">
+            <ul>
+              <li class="one whole"><a href="bookpage.html#book-box">Children's Books</a></li>
+              <li class="one whole"><a href="bookpage.html#youngadult-books">Young Adult Books</a></li>
+              
+            </ul>
+          </nav>
+        </aside>
+        <article class="four fifths">
+            <div class="row">
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">Drita, My Homegirl</h4><img src="images/Drita.jpg" height="250px" width="200px">
+                  <p class="truncate">As a refugee from Kosovo and a new student at her school in New York City, Drita's transition is made even more difficult when Maxie, a tough African-American girl, teases her for just about everything.</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">Rosa</h4><img src="images/Rosa.jpg" height="250px" width="200px">
+                  <p class="truncate">She had not sought this moment but she was ready for it. When the policeman bent down to ask "Auntie, are you going to move?" all the strength of all the people through all those many years joined in her. She said, "No."</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">I’m New Here</h4><img src="images/iamhere.jpg" height="250px" width="200px">
+                  <p class="truncate">Three students are immigrants from Guatemala, Korea, and Somalia and have trouble speaking, writing, and sharing ideas in English in their new American elementary school.</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">Islandborn</h4><img src="images/islandborn.jpg" height="250px" width="200px">
+                  <p class="truncate">From New York Times bestseller and Pulitzer Prize winner Junot Díaz comes a debut picture book about the magic of memory and the infinite power of the imagination. Every kid in Lola's school was from somewhere else. Hers was a school of faraway places.</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">Dear Martin</h4><img src="images/dearmartin.jpg" height="250px" width="200px">
+                  <p class="truncate">Justyce McAllister is top of his class and set for the Ivy League—but none of that matters to the police officer who just put him in handcuffs. And despite leaving his rough neighborhood behind, he can't escape the scorn of his former peers or the ridicule of his new classmates.</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">The Mighty Miss Malone</h4><img src="images/TheMMM.jpg" height="250px" width="200px">
+                  <p class="truncate">We are a family on a journey to a place called wonderful" is the motto of Deza Malone's family. Deza is the smartest girl in her class in Gary, Indiana, singled out by teachers for a special path in </p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">One Crazy Summer</h4><img src="images/Onecrazysummer.jpg" height="250px" width="200px">
+                  <p class="truncate">Eleven-year-old Delphine is like a mother to her two younger sisters, Vonetta and Fern. She's had to be, ever since their mother, Cecile, left them seven years ago for a radical new life in California. But when the sisters arrive from Brooklyn to spend the summer with their mother, Cecile</p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+                <div class="box">
+                  <h4 data-compression="7" data-max="20" class="responsive align-center zero">Copper Sun</h4><img src="images/Coppersun.jpg" height="250px" width="200px">
+                  <p class="truncate">Amari's life was once perfect. Engaged to the handsomest man in her tribe, adored by her family, and living in a beautiful village, she could not have imagined everything could be taken away from her in an instant. </p>
+                  <p>$8.00 USD<i class="icon-book pull-right large"></i></p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+    <footer class="gap-top bounceInUp animated">
+      <div class="box square charcoal">
+        <div class="container padded">
+          <div class="row">
+            <div class="one small-tablet fourth padded">
+              
+             
+            </div>
+            <div class="three small-tablet fourths padded">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box square">
+        <div class="container padded">
+          <div class="row">
+            <div class="one half padded">
+               
+            </div>
+            <div class="one half padded">
+              <p class="large padded align-left align-center-small-tablet"><a href="http://twitter.com/books_everyone" target="_blank" title="@books_everyone" style="text-decoration:none;" class="large inline gapped"></a><a href="https://www.facebook.com/events/197024321072833/" target="_blank" title="@groundworkcss" style="text-decoration:none;" class="large inline gapped"></a><a href="mailto:books4every1@yahoo.com" title="books4every1@yahoo.com" style="text-decoration:none;" class="large inline gapped"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript-->
+    <script type="text/javascript" src="../js/groundwork.all.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

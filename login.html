@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Books For Everyone!!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="623837148400-pgdpmeqqui8ijnc6ielug3b8kkn9iqrq.apps.googleusercontent.com">
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log("calling onSignIn()")
+        console.log('profile '+profile);
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+      }
+      
+      var googleUser = GoogleAuth.currentUser.get();
+      var profile = googleUser.getBasicProfile();
+      
+      console.log("Hello, I'm here.  ")
+
+      // console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+      // console.log('Name: ' + profile.getName());
+      // console.log('Image URL: ' + profile.getImageUrl());
+      // console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+      // console.log(GoogleAuth.currentUser.get());
+      
+      document.getElementById("greeting-user").innerHTML = "<h1>Welcome Back, Dog</h1>";
+    </script>
+    <style>
+      .g-signin2 {
+        margin: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="greeting-user"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
+
+</body>
+</html>

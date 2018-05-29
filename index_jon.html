@@ -1,0 +1,230 @@
+
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js ie ie6 lt-ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html class="no-js ie ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Books for Everyone!!</title>
+    <!-- Modernizr -->
+    <script src="../js/libs/modernizr-2.6.2.min.js"></script>
+    <!-- jQuery-->
+    <script type="text/javascript" src="../js/libs/jquery-1.10.2.min.js"></script>
+    <!--FireBase-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    
+
+    <script type="text/javascript" src="CSS/reset.css"></script>
+    <!-- framework css --><!--[if gt IE 9]><!-->
+    <link type="text/css" rel="stylesheet" href="CSS/groundwork.css"><!--<![endif]--><!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" href="../CSS/groundwork-core.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-type.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ui.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-anim.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css"><![endif]-->
+    <style type="text/css">
+      .logo {
+        position: relative;
+        top: -0.5em;
+      }
+      .logo a, .logo a:visited {
+        text-decoration: none;
+        color: #2B2B2D;
+      }
+      .logo img {
+        height: 2em;
+        position: relative;
+        top: 0.55em;
+        margin-right: 0.3em;
+      }
+      
+    </style>
+    <!-- snippet (syntax highlighting for code examples)-->
+    <script type="text/javascript" src="../js/demo/jquery.snippet.min.js"></script>
+    <script type="text/javascript" src="../js/googleBooks.js"></script>
+    <script type="text/javascript">
+(function() {
+
+  $(document).ready(function() {
+    $('pre[data-lang="html"]').snippet("html", {
+      style: "groundwork",
+      clipboard: "../js/demo/ZeroClipboard.swf"
+    });
+    $('pre[data-lang="css"]').snippet("css", {
+      style: "groundwork",
+      clipboard: "../js/demo/ZeroClipboard.swf"
+    });
+    $('pre[data-lang="sass"]').snippet("sass", {
+      style: "groundwork",
+      clipboard: "../js/demo/ZeroClipboard.swf"
+    });
+    return $('pre[data-lang="js"]').snippet("javascript", {
+      style: "groundwork",
+      clipboard: "../js/demo/ZeroClipboard.swf"
+    });
+  });
+
+}).call(this);
+</script>
+  </head>
+  <body>
+    <header class="padded">
+      <div class="container">
+        <div class="row">
+          <div class="one half">
+            <h2 class="logo"><a href="/" target="_parent"><img src="images/bookslogo.jpg" alt="Books for Everyone!!">Books for Everyone!!</a></h2>
+          </div>
+          <div class="one half">
+          </div>
+        </div>
+        <nav role="navigation" class="nav gap-top">
+          <ul role="menubar">
+            <li><a href="./index.html"><i class="icon-home"></i> Home</a></li>
+            <li role="menu">
+              <button>Community</button>
+              <ul>
+                <li><a href="bookpage.html">BookList Page</a></li>
+                <li><a href="wishlist.html">WishList Page</a></li>
+                <li><a href="community.html">Community Page</a></li>
+              </ul>
+            </li>
+            
+              
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="padded">
+        <div class="row">
+          <div class="three fifths bounceInRight animated">
+            <h1 class="zero museo-slab">Mission Statement</h1>
+            <p class="quicksand">Our mission is to provide resources for parents and children to find books with characters  with diversity in nationality and ethnic background. We hope to provide children and adults with the possibility to access books they may not have known about or be able to afford. Learning about a variety of diverse upbringings helps with acceptance and respect among people regardless of their differences. This will hopefully make the world a better place one book at a time.</p>
+          </div>
+          <div class="two fifths align-right-ipad align-right-desktop flipInX animated">
+            
+            <p><a href="community.html" rel="prev" class="blue button">Back</a> <a href="bookpage.html" rel="next" class="green button">Next: Community Page</a></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="align-right padded"><a href="#" class="gap-right">My Account <i class="icon-user"></i></a><a href="#" class="gap-right">View Cart <i class="icon-shopping-cart"></i></a><a href="#">Sign Out <i class="icon-signout"></i></a></div>
+      <div class="row">
+        <aside class="one fifth padded bounceInLeft animated">
+          <nav title="Shop by Category" role="menu" class="small-tablet nav vertical menu">
+            <ul>
+              <li class="one whole"><a>Children's Books</a></li>
+              <li class="one whole"><a>Young Adult Books</a></li>
+              
+            </ul>
+          </nav>
+        </aside>
+        <article class="four fifths">
+          <div class="row">
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 1</h4><img src="images/Drita.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 2</h4><img src="images/Rosa.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 3</h4><img src="images/iamhere.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 4</h4><img src="images/islandborn.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInDown animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 5</h4><img src="images/dearmartin.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInUp animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 6</h4><img src="images/TheMMM.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded rotateInDownRight animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 7</h4><img src="images/Onecrazysummer.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            <div class="one fourth three-up-small-tablet two-up-mobile padded bounceInRight animated">
+              <div class="box">
+                <h4 data-compression="7" data-max="20" class="responsive align-center zero">Product 8</h4><img src="images/Coppersun.jpg" height="250px" width="200px">
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>$8.00 USD<i class="icon-shopping-cart pull-right large"></i></p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <footer class="gap-top bounceInUp animated">
+      <div class="box square charcoal">
+        <div class="container padded">
+          <div class="row">
+            <div class="one small-tablet fourth padded">
+              
+             
+            </div>
+            <div class="three small-tablet fourths padded">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box square">
+        <div class="container padded">
+          <div class="row">
+            <div class="one half padded">
+               
+            </div>
+            <div class="one half padded">
+              <p class="large padded align-right align-center-small-tablet"><a href="http://twitter.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;" class="large inline gapped"></a><a href="http://github.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;" class="large inline gapped"></a><a href="mailto:groundworkcss@gmail.com" title="groundworkcss@gmail.com" style="text-decoration:none;" class="large inline gapped"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript-->
+    <script type="text/javascript" src="../js/groundwork.all.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+   body {
+        margin-left: 10px;
+        } 
+    
+        h2 {
+            margin-left: 25px;
+            font-family: 'Love Ya Like A Sister', cursive;
+        }
+
+        p {
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 24px;
+        }
+
+        #book-box, #youngadult-books {
+            margin-left: 15px;
+            
+        }
+
+         .classWrap {
+            min-height: 250px;
+        }

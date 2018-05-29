@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Community</title>
+
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  </head>
+
+  <body>
+    <header>Community Page</header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="header">
+                <img src="assets/images/images.png" alt="logo" />
+                <h1>WANT BOOK</h1>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Book Title</label>
+                  <input type="text" class="form-control" id="BookTitle1" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Author</label>
+                  <input type="text" class="form-control" id="Author1" placeholder="Author">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3">Neighborhood</label>
+                  <input type="text" class="form-control" id="Neighborhood1" placeholder="Neighborhood">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="Comments1" rows="3"></textarea>
+                </div>
+                <button type="submit" id="submit1" class="btn btn-primary">Submit</button>
+                <button type="button" id="View1" class="btn btn-primary">View Wanted Books</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="header">
+                <img src="assets/images/images.png" alt="logo" />
+                <h1>GIVE BOOKS</h1>
+              </div>
+              <form action="/display2.html" method="get">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Book Title</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Author</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Author">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3">Neighborhood</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Neighborhood">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="header">
+                <img src="assets/images/suggest.jpg" alt="logo" />
+                <h1>Suggest a Book</h1>
+              </div>
+              <form action="/display3.html" method="get">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Book Title</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Author</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Author">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3">Neighborhood</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Neighborhood">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <form>
+              <div class="header2">
+                <img src="assets/images/div.jpg" alt="logo" />
+                <h1>Schedule a Reading</h1>
+              <form  class="fb-button" action="https://www.facebook.com/events/197024321072833/">
+                <input type="submit" class="btn btn-primary" value="Go to Events Page" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="assets/javascript/community.js"></script>
+  </body>
+
+  </html>

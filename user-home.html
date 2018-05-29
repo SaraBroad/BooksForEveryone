@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html class="no-js ie ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Books for Everyone!!</title>
+
+  <!--  STYLES  -->
+  <link type="text/css" rel="stylesheet" href="CSS/reset.css">
+
+  <!-- <script type="text/javascript" src="CSS/reset.css"></script> -->
+  <!-- framework css -->
+  <!--[if gt IE 9]><!-->
+  <link type="text/css" rel="stylesheet" href="CSS/groundwork.css">
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" href="../CSS/groundwork-core.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-type.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ui.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-anim.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css"><![endif]-->
+
+  <!-- add links to any style sheets you have created for your page -->
+  <!--
+  <link type="text/css" rel="stylesheet" href="CSS/YOURFILE.css">
+  -->
+  <link rel="stylesheet" type="text/css" media="screen" href="CSS/user-home.css" />
+
+  <style type="text/css">
+    .logo {
+      position: relative;
+      top: -0.5em;
+    }
+
+    .logo a,
+    .logo a:visited {
+      text-decoration: none;
+      color: #2B2B2D;
+    }
+
+    .logo img {
+      height: 2em;
+      position: relative;
+      top: 0.55em;
+      margin-right: 0.3em;
+    }
+  </style>
+  <style>
+    #left-side {
+      padding: 10px;
+
+    }
+
+    #right-side {
+      padding: 10px;
+      border-left: 1px #777777 dotted;
+    }
+
+    input {
+      margin: 2px 0 0 0;
+    }
+  </style>
+
+  <!-- SCRIPTS & CODE ++++++++++++++++++++ -->
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <!-- jQuery-->
+  <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+  <!--FireBase-->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment-with-locales.min.js">
+    // snippet (syntax highlighting for code examples)
+
+    // <script type="text/javascript">
+    // (function () {
+    //   $(document).ready(function () {
+    //     $('pre[data-lang="html"]').snippet("html", {
+    //       style: "groundwork",
+    //       clipboard: "js/demo/ZeroClipboard.swf"
+    //     });
+    //     $('pre[data-lang="css"]').snippet("cs", {
+    //       style: "groundwork",
+    //       clipboard: "js/demo/ZeroClipboard.swf"
+    //     });
+    //     $('pre[data-lang="sass"]').snippet("sass", {
+    //       style: "groundwork",
+    //       clipboard: "js/demo/ZeroClipboard.swf"
+    //     });
+    //     return $('pre[data-lang="js"]').snippet("javascript", {
+    //       style: "groundwork",
+    //       clipboard: "js/demo/ZeroClipboard.swf"
+    //     });
+    //   });
+    // }).call(this);
+    //
+  </script>
+  <!--
+  link to your js files here!  E.g., main page should link to this (which is very buggy at this time!)
+  <script type="text/javascript" src="js/googleBooks.js"></script>
+-->
+  <script type="text/javascript" src="js/demo/jquery.snippet.min.js"></script>
+  <script type="text/javascript" src="js/user-home.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+
+</head>
+
+<body>
+
+  <header class="padded">
+    <div class="container">
+      <div class="row">
+        <div class="one half">
+          <h2 class="logo">
+            <a href="index.html" target="_parent">
+              <img src="assets/images/div.jpg" alt="Books for Everyone!!">Books for Everyone!!</a>
+          </h2>
+        </div>
+        <!-- <div class="one half">
+        </div> -->
+      </div>
+      <nav role="navigation" class="nav">
+        <ul role="menubar">
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="bookpage.html">Books We Like</a>
+          </li>
+          <li>
+            <a href="wishlist.html">Wish!</a>
+          </li>
+          <li>
+            <a href="communityMollusk.html">Community</a>
+          </li>
+          <li style="float:right">
+            <a href="user-home.html">
+              <i class="icon-user icon-1x"></i> Join Us or Sign In!</a>
+          </li>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="padded">
+      <div class="row">
+        <div class="three fifths bounceInRight animated">
+          <h1 class="zero museo-slab">
+            <i class="icon-book icon-1x"></i> User Page</h1>
+          <p class="quicksand">
+            <b>Welcome, Friend! On this page you can...
+              <i class="icon-ok icon-1x"></i>Sign in with Google
+              <i class="icon-google-plus-sign icon-1x"></i>
+              <i class="icon-ok icon-1x"></i>Complete or update you profile
+              <i class=" icon-edit icon-1x"></i>
+            </b>
+          </p>
+        </div>
+        <div class="two fifths align-right-ipad align-right-desktop flipInX animated">
+
+          <p>
+            <!-- <a href="layout-b.html" rel="prev" class="blue button">Back</a>
+            <a href="layout-d.html" rel="next" class="green button">Next: Community Page</a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div id="left-side" class="half">
+        <div class="row">
+          <h2 class="one half">Join or
+            <input id="btn-login" type="button" value="login">
+          </h2>
+
+          <!-- <img class="one half" src="images/login mockup.png"> -->
+        </div>
+
+        <form id="user-info">
+          <div class="row">
+            <input id="usr-first-name" class="one half" type="text" placeholder="First Name">
+            <input id="usr-last-name" class="one half" type="text" placeholder="Last Name">
+          </div>
+          <input id="usr-email" type="text" placeholder="email">
+          <input id="usr-street" type="text" placeholder="Street">
+          <div class="row">
+            <input class="seven tenth" id="usr-city" type="text" placeholder="City">
+            <input class="one tenth" id="usr-state" type="text" placeholder="State">
+            <input class="two tenth" id="usr-zip" type="text" placeholder="Postal Code">
+          </div>
+          <input id="usr-tel" type="text" placeholder="Telephone number">
+          <input id="usr-more-about" type="textarea" placeholder="Tell us more about you">
+          <input id="usr-stay-logged-in" type="checkbox" value="" Label="Keep Me Logged In"> Keep Me Logged In
+          <br>
+          <br>
+          <input id="usr-info-sbmt-btn" type="submit">
+        </form>
+      </div>
+      <div id="right-side" class="one half">
+        <h2>In your neighborhood</h2>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTrLjTdz7FcMXK268u0JLkR_KybHh8GJk&callback=initMap&libraries=places,visualization"></script>
+
+        <div id="map-holder" class="map-size-m">
+          <input type="button" id="btn-library" class="btn-active" name="btn-library" value="Libraries">
+          <input type="button" id="btn-store" name="btn-store" value="Bookstores">
+          <div id="map"></div>
+          <div="btn-size-holder">
+            <!-- <span id="btn-size-label">Map Size:</span> -->
+            <!-- <input type="button" id="btn-size-xs" class="btn-size" name="btn-size-xs" value="XS"> -->
+            <input type="button" id="btn-size-s" class="btn-size" name="btn-size-s" value="S">
+            <input type="button" id="btn-size-m" class="btn-size" name="btn-size-m" value="M">
+            <input type="button" id="btn-size-l" class="btn-size" name="btn-size-l" value="L">
+            <input type="button" id="btn-size-xl" class="btn-size" name="btn-size-xl" value="XL">
+        </div>
+      </div>
+      <script>
+        whereAmI()
+        initMap()
+        // listPlaces();
+
+        //display list of local stores on tab click
+        $("#btn-store").on("click", function () {
+          $("#btn-store").addClass("btn-active")
+          $("#btn-store").removeClass("btn-inactive")
+          $("#btn-library").addClass("btn-inactive")
+          $("#btn-library").removeClass("btn-active")
+          if (curMap != 'book store') {
+            curMap = 'book store';
+            initMap();
+          }
+        })
+
+        //display list of local libraries on tab click
+        $("#btn-library").on("click", function () {
+          $("#btn-library").addClass("btn-active")
+          $("#btn-library").removeClass("btn-inactive")
+          $("#btn-store").addClass("btn-inactive")
+          $("#btn-store").removeClass("btn-active")
+          if (curMap != 'library') {
+            curMap = 'library';
+            initMap();
+          }
+        })
+
+        // allows user to choose map-size
+        $("#btn-size-s").on("click", function () {
+          $("#btn-size-s").addClass("btn-size-active")
+          // $("#btn-size-s").removeClass("btn-size-active")
+          $("#btn-size-m").removeClass("btn-size-active")
+          $("#btn-size-l").removeClass("btn-size-active")
+          $("#btn-size-xl").removeClass("btn-size-active")
+          $("#map-holder").addClass("map-size-s")
+          // $("#map-holder").removeClass("map-size-s")
+          $("#map-holder").removeClass("map-size-m")
+          $("#map-holder").removeClass("map-size-l")
+          $("#map-holder").removeClass("map-size-xl")
+        });
+        $("#btn-size-m").on("click", function () {
+          $("#btn-size-m").addClass("btn-size-active");
+          $("#btn-size-s").removeClass("btn-size-active");
+          // $("#btn-size-m").removeClass("btn-size-active");
+          $("#btn-size-l").removeClass("btn-size-active");
+          $("#btn-size-xl").removeClass("btn-size-active");
+          $("#map-holder").addClass("map-size-m");
+          $("#map-holder").removeClass("map-size-s");
+          // $("#map-holder").removeClass("map-size-m");
+          $("#map-holder").removeClass("map-size-l");
+          $("#map-holder").removeClass("map-size-xl");
+        });
+        $("#btn-size-l").on("click", function () {
+          $("#btn-size-l").addClass("btn-size-active")
+          $("#btn-size-s").removeClass("btn-size-active")
+          $("#btn-size-m").removeClass("btn-size-active")
+          // $("#btn-size-l").removeClass("btn-size-active")
+          $("#btn-size-xl").removeClass("btn-size-active")
+          $("#map-holder").addClass("map-size-l")
+          $("#map-holder").removeClass("map-size-s")
+          $("#map-holder").removeClass("map-size-m")
+          // $("#map-holder").removeClass("map-size-l")
+          $("#map-holder").removeClass("map-size-xl")
+        });
+        $("#btn-size-xl").on("click", function () {
+          $("#btn-size-xl").addClass("btn-size-active")
+          $("#btn-size-s").removeClass("btn-size-active")
+          $("#btn-size-m").removeClass("btn-size-active")
+          $("#btn-size-l").removeClass("btn-size-active")
+          // $("#btn-size-xl").removeClass("btn-size-active");
+          $("#map-holder").addClass("map-size-xl")
+          $("#map-holder").removeClass("map-size-s")
+          $("#map-holder").removeClass("map-size-m")
+          $("#map-holder").removeClass("map-size-l")
+          // $("#map-holder").removeClass("map-size-xl");
+        });
+        // handle submission of new memnber form...
+        $("#user-info-sbmt-btn").on("click", function () {
+          event.preventDefault()
+
+        })
+
+        function usrProfile(usrFirstName, usrLastName, usrEmail, usrStreet, usrCity, usrState, usrZip, usrTel,
+          usrMoreAbout, usrStayLoggedIn) {
+          this.usrFirstName = usrFirstName;
+          this.usrLastName = usrLastName;
+          this.usrEmail = usrEmail;
+          this.usrStreet = usrStreet;
+          this.usrCity = usrCity;
+          this.usrState = usrState;
+          this.usrZip = usrZip;
+          this.usrTel = usrTel;
+          this.usrMoreAbout = usrMoreAbout;
+          this.usrStayLoggedIn = usrStayLoggedIn;
+        }
+
+        $("#usr-info-sbmt-btn").on('click', function () {
+          event.preventDefault();
+          $
+          if ($("#usr-stay-logged-in").is(":checked")) {
+            var usrStayLoggedIn = true;
+          } else {
+            var usrStayLoggedIn = false;
+          }
+          newUser = new usrProfile(
+            $("#usr-first-name").val(),
+            $("#usr-last-name").val(),
+            $("#usr-email").val(),
+            $("#usr-street").val(),
+            $("#usr-city").val(),
+            $("#usr-state").val(),
+            $("#usr-zip").val(),
+            $("#usr-tel").val(),
+            $("#usr-more-about").val(),
+            usrStayLoggedIn
+          )
+          console.log(newUser);
+          addToFirebase(newUser)
+
+        });
+      </script>
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="gap-top bounceInUp animated">
+    <div class="box square charcoal">
+      <div class="container padded">
+        <div class="row">
+          <div class="one small-tablet fourth padded">
+          </div>
+          <div class="three small-tablet fourths padded">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box square">
+      <div class="container padded">
+        <div class="row">
+          <div class="one half padded">
+          </div>
+          <div class="one half padded">
+            <p class="large padded align-right align-center-small-tablet">
+              <!-- <a href="http://twitter.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;"
+                class="large inline gapped"></a>
+              <a href="http://github.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;"
+                class="large inline gapped"></a>
+              <a href="mailto:groundworkcss@gmail.com" title="groundworkcss@gmail.com" style="text-decoration:none;"
+                class="large inline gapped"></a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- javascript-->
+  <script type="text/javascript" src="js/groundwork.all.js"></script>
+  <!-- google analytics-->
+  <!-- <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script> -->
+</body>
+
+</html>

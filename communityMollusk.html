@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lt-ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 7]>   <html class="no-js ie ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 8]>   <html class="no-js ie ie8 lt-ie9 lt-ie10"><![endif]-->
+<!--[if IE 9]>   <html class="no-js ie ie9 lt-ie10"><![endif]-->
+<!--[if gt IE 9]><html class="no-js ie ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Books for Everyone!!</title>
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+  <!-- jQuery-->
+  <script type="text/javascript" src="js/libs/jquery-1.10.2.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <link type="text/css" rel="stylesheet" href="CSS/groundwork.css">
+  <!--<![endif]-->
+  <!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" href="../CSS/groundwork-core.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-type.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ui.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-anim.css">
+    <link type="text/css" rel="stylesheet" href="../css/groundwork-ie.css"><![endif]-->
+
+  <!-- add links to any style sheets you have created for your page -->
+  <!--
+  <link type="text/css" rel="stylesheet" href="CSS/YOURFILE.css">
+  -->
+
+
+  <style type="text/css">
+    .logo {
+      position: relative;
+      top: -0.5em;
+    }
+
+    .logo a,
+    .logo a:visited {
+      text-decoration: none;
+      color: #2B2B2D;
+    }
+
+    .logo img {
+      height: 2em;
+      position: relative;
+      top: 0.55em;
+      margin-right: 0.3em;
+    }
+  </style>
+
+
+  <!-- snippet (syntax highlighting for code examples)-->
+  <script type="text/javascript" src="js/demo/jquery.snippet.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      $(document).ready(function () {
+        $('pre[data-lang="html"]').snippet("html", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        $('pre[data-lang="css"]').snippet("css", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        $('pre[data-lang="sass"]').snippet("sass", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+        return $('pre[data-lang="js"]').snippet("javascript", {
+          style: "groundwork",
+          clipboard: "js/demo/ZeroClipboard.swf"
+        });
+      });
+    }).call(this);
+  </script>
+  <!--
+  link to your js files here!  E.g., main page should link to this (which is very buggy at this time!)
+  <script type="text/javascript" src="js/googleBooks.js"></script>
+-->
+</head>
+
+<body>
+
+  <header class="padded">
+    <div class="container">
+      <div class="row">
+        <div class="one half">
+          <h2 class="logo">
+            <a href="index.html" target="_parent">
+              <img src="assets/images/div.jpg" alt="Books for Everyone!!">Books for Everyone!!</a>
+          </h2>
+        </div>
+        <!-- <div class="one half">
+        </div> -->
+      </div>
+      <nav role="navigation" class="nav">
+        <ul role="menubar">
+          <li>
+            <a href="index.html">
+              <i class="icon-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="bookpage.html">Books We Like</a>
+          </li>
+          <li>
+            <a href="wishlist.html">Wish!</a>
+          </li>
+          <li>
+            <a href="communityMollusk.html">Community</a>
+          </li>
+          <li style="float:right">
+            <a href="user-home.html">
+              <i class="icon-user icon-1x"></i> Join Us or Sign In!</a>
+          </li>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="padded">
+      <div class="row">
+        <div class="three fifths bounceInRight animated">
+          <h1 class="zero museo-slab">Community Page</h1>
+        </div>
+        <div class="two fifths align-right-ipad align-right-desktop flipInX animated">
+
+          <p>
+            <!-- <a href="layout-b.html" rel="prev" class="blue button">Back</a>
+            <a href="layout-d.html" rel="next" class="green button">Next: Community Page</a> -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="header">
+                  <img src="assets/images/suggest.jpg" alt="logo" />
+                  <h1>Want a Book</h1>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Book Title</label>
+                    <input type="text" class="form-control" id="BookTitle1" placeholder="Title">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Author</label>
+                    <input type="text" class="form-control" id="Author1" placeholder="Author">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput3">Neighborhood</label>
+                    <input type="text" class="form-control" id="Neighborhood1" placeholder="Neighborhood">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Comments</label>
+                    <textarea class="form-control" id="Comments1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" id="submit1" class="btn btn-primary">Submit</button>
+                  <button type="button" id="View1" class="btn btn-primary">View Wanted Books</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="header">
+                  <img src="assets/images/images-1.png" alt="logo" />
+                  <h1>Give Books</h1>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="Email2" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Book Title</label>
+                    <input type="text" class="form-control" id="BookTitle2" placeholder="Title">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Author</label>
+                    <input type="text" class="form-control" id="Author2" placeholder="Author">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput3">Neighborhood</label>
+                    <input type="text" class="form-control" id="Neighborhood2" placeholder="Neighborhood">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Comments</label>
+                    <textarea class="form-control" id="Comments2" rows="3"></textarea>
+                  </div>
+                  <button type="submit" id="submit2" class="btn btn-primary">Submit</button>
+                  <button type="button" id="view2" class="btn btn-primary">View Given Books</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="header">
+                  <img src="assets/images/images.jpg" alt="logo" />
+                  <h1>Suggest Book</h1>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="Email3" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Book Title</label>
+                    <input type="text" class="form-control" id="BookTitle3" placeholder="Title">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">Author</label>
+                    <input type="text" class="form-control" id="Author3" placeholder="Author">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput3">Neighborhood</label>
+                    <input type="text" class="form-control" id="Neighborhood3" placeholder="Neighborhood">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Comments</label>
+                    <textarea class="form-control" id="Comments3" rows="3"></textarea>
+                  </div>
+                  <button type="submit" id="submit3" class="btn btn-primary">Submit</button>
+                  <button type="button" id="view3" class="btn btn-primary">View Suggested Books</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <form>
+                <div class="header2">
+                  <img src="assets/images/images-2.jpg" alt="logo" />
+                  <h7>Schedule Reading</h7>
+                  <a href="https://www.facebook.com/events/197024321072833" class="btn btn-primary btn-lg active" role="button">Event link</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer class="gap-top bounceInUp animated">
+    <div class="box square charcoal">
+      <div class="container padded">
+        <div class="row">
+          <div class="one small-tablet fourth padded">
+
+
+          </div>
+          <div class="three small-tablet fourths padded">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box square">
+      <div class="container padded">
+        <div class="row">
+          <div class="one half padded">
+          </div>
+          <div class="one half padded">
+            <p class="large padded align-right align-center-small-tablet">
+              <!-- <a href="http://twitter.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;"
+                class="large inline gapped"></a>
+              <a href="http://github.com/groundworkcss" target="_blank" title="@groundworkcss" style="text-decoration:none;"
+                class="large inline gapped"></a>
+              <a href="mailto:groundworkcss@gmail.com" title="groundworkcss@gmail.com" style="text-decoration:none;"
+                class="large inline gapped"></a> -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/community.js"></script>
+    <script type="text/javascript" src="js/groundwork.all.js"></script>
+    <!-- google analytics-->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+          '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+
+</html>

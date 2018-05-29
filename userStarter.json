@@ -1,0 +1,35 @@
+{
+  "members" : 
+    [ 
+    {
+      "usrFirstName" :  "Lisa",
+      "usrLastName" : "Lion",
+      "usrEmail" : "roar@standup2power.org",
+      "usrStreet" : "123 Maple St",
+      "usrCity" : "River City",
+      "usrState" : "IA",
+      "usrZip" : "50401",
+      "usrTel" : "641-555-5555",
+      "usrMoreAbout  " : "I kill gazelles on the Savannah",
+      "usrWishList" : "[]",
+      "usrGiveList" : "[]",
+      "usrCmtList" : "[]",
+      "usrStayLoggedIn" : "true"
+    },
+    {
+      "usrFirstName" :  "Patti",
+      "usrLastName" : "Panther",
+      "usrEmail" : "whisper@silentdeath.org",
+      "usrStreet" : "456 Chestnut Ave",
+      "usrCity" : "Ardmore",
+      "usrState" : "PA",
+      "usrZip" : "19003",
+      "usrTel" : "610-555-1234",
+      "usrMoreAbout  " : "I spend my nights on tree branches waiting to kill smaller mammals",
+      "usrWishList" : "[]",
+      "usrGiveList" : "[]",
+      "usrCmtList" : "[]",
+      "usrStayLoggedIn" : "true"
+    }
+  ]
+}

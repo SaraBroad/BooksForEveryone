@@ -1,0 +1,24 @@
+usrFirstName, usrLastName, usrEmail, usrStreet, usrCity, usrState, usrZip, usrTel, usrMoreAbout, usrStayLoggedIn
+
+
+usr-first-name
+usr-last-name
+usr-email
+usr-street
+usr-city
+usr-state
+usr-zip
+usr-tel
+usr-more-about
+usr-stay-logged-in
+
+$("#usr-first-name").val()
+$("#usr-last-name").val()
+$("#usr-email").val()
+$("#usr-street").val()
+$("#usr-city").val()
+$("#usr-state").val()
+$("#usr-zip").val()
+$("#usr-tel").val()
+$("#usr-more-about").val()
+$("#usr-stay-logged-in").val()
